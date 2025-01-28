@@ -1,0 +1,54 @@
+Resistance,Patient_id,Gender,Age,Smoking history,Number of systemic lines received before enrollment in IRIS,History of chemotherapy,History of targeted therapy,Treatment regimen,Treatment class,Cancer type,ONCOTREE_CODE
+Acquired resistance,IRS-0004-A-003,Male,62,Never,1,No,No,immunotherapy other combination,immunotherapy + other treatment,SCC oral cavity,HNSC
+Acquired resistance,IRS-0025-A-025,Male,51,Never,1,Yes,No,combination with chemo or targeted treatments,immunotherapy + other treatment,SCC hypopharynx,HNSC
+Acquired resistance,IRS-0027-A-027,Male,59,Never,2,Yes,yes,combination with chemo or targeted treatments,immunotherapy + other treatment,Pleural mesothelioma,PLMESO
+Acquired resistance,IRS-0072-A-072,Female,74,10 p/y,1,No,No,immunotherapy other combination,immunotherapy + other treatment,Merkel Cell Carcinoma,MCC
+Acquired resistance,IRS-0080-A-080,Female,68,NA,2,Yes,Yes,combination with chemo or targeted treatments,immunotherapy + other treatment,Endometrial cancer endometriod,UCEC
+Acquired resistance,IRS-0087-A-087,Female,61,NA,NA,NA,NA,combination with chemo or targeted treatments,immunotherapy + other treatment,SCC oral cavity,HNSC
+Primary resistance,IRS-0009-P-009,Female,65,15 p/y,2,Yes,Yes,combination with chemo or targeted treatments,immunotherapy + other treatment,Serous endometrial,USC
+Primary resistance,IRS-0011-P-011,Male,57,Never,3,Yes,Yes,combination with chemo or targeted treatments,immunotherapy + other treatment,CRC,COAD
+Primary resistance,IRS-0035-P-035,Female,59,Never,2,Yes,Yes,combination with chemo or targeted treatments,immunotherapy + other treatment,MSI-high CRC,COAD
+Primary resistance,IRS-0055-P-055,Male,55,25 p/y,1,Yes,No,combination with chemo or targeted treatments,immunotherapy + other treatment,SCC oral cavity,HNSC
+Primary resistance,IRS-0056-P-056,Male,73,50 p/y,3,No,Yes,immunotherapy other combination,immunotherapy + other treatment,SCC oropharynx,HNSC
+Primary resistance,IRS-0078-P-078,Male,54,Never,2,Yes,No,combination with chemo or targeted treatments,immunotherapy + other treatment,SCC Oropharynx,HNSC
+Acquired resistance,IRS-0001-A-004,Male,32,Never,2,Yes,No,immunotherapy other combination,immunotherapy combination,GE junction adenocarcinoma,EGC
+Acquired resistance,IRS-0012-A-012,Male,71,15 p/y,2,No,Yes,immunotherapy other combination,immunotherapy combination,SCC left supraglottic larynx,HNSC
+Acquired resistance,IRS-0021-A-021,Male,63,Never,1,No,No,anti-PD-1 + anti CTLA4,immunotherapy combination,Mucosal melanoma (sinonasal),HNMUCM
+Acquired resistance,IRS-0028-A-028,Female,57,3 p/y,2,No,No,anti-PD-1 + anti CTLA4,immunotherapy combination,Cutaneus melanoma,SKCM
+Acquired resistance,IRS-0032-A-032,Male,75,Never,1,No,No,immunotherapy other combination,immunotherapy combination,SCC oropharynx,HNSC
+Acquired resistance,IRS-0057-A-057,Female,41,15 p/y,1,No,No,anti-PD-1 + anti CTLA4,immunotherapy combination,Cutaneus melanoma,SKCM
+Acquired resistance,IRS-0062-A-062,Male,54,Never,2,No,Yes,anti-PD-1 + anti CTLA4,immunotherapy combination,Cutaneus melanoma,SKCM
+Acquired resistance,IRS-0073-A-073,Male,67,30 p/y,1,No,No,immunotherapy other combination,immunotherapy combination,SCC oropharynx,HNSC
+Acquired resistance,IRS-0081-A-081,Female,70,Smoker,1,No,No,anti-PD-1 + anti CTLA4,immunotherapy combination,Cutaneus melanoma,SKCM
+Primary resistance,IRS-0005-P-005,Female,26,Never,1,No,No,anti-PD-1 + anti CTLA4,immunotherapy combination,Uveal melanoma,UM
+Primary resistance,IRS-0020-P-020,Male,71,Never,2,No,No,anti-PD-1 + anti CTLA4,immunotherapy combination,Cutaneus melanoma,SKCM
+Primary resistance,IRS-0023-P-023,Female,56,Never,3,Yes,Yes,immunotherapy other combination,immunotherapy combination,SCC oral cavity,HNSC
+Primary resistance,IRS-0031-P-031,Female,57,NA,1,No,No,anti-PD-1 + anti CTLA4,immunotherapy combination,Cutaneus melanoma,SKCM
+Primary resistance,IRS-0048-P-048,Female,44,Never,2,No,No,immunotherapy other combination,immunotherapy combination,Cutaneus melanoma,SKCM
+Primary resistance,IRS-0050-P-050,Male,74,NA,1,No,No,anti-PD-1 + anti CTLA4,immunotherapy combination,Mucosal melanoma (rectum),ARMM
+Primary resistance,IRS-0053-P-053,Female,72,Never,1,No,No,anti-PD-1 + anti CTLA4,immunotherapy combination,Mucosal melanoma head and neck,HNMUCM
+Primary resistance,IRS-0066-P-066,Male,73,60 p/y,1,No,No,anti-PD-1 + anti CTLA4,immunotherapy combination,Cutaneus melanoma,SKCM
+Primary resistance,IRS-0077-P-077,Female,67,10 p/y,1,No,No,anti-PD-1 + anti CTLA4,immunotherapy combination,Mucosal melanoma (vulva),VMM
+Primary resistance,IRS-0088-P-088,Male,71,NA,NA,NA,NA,anti-PD-1 + anti CTLA4,immunotherapy combination,Cutaneus melanoma,SKCM
+Primary resistance,IRS-0089-P-089,Female,57,NA,NA,NA,NA,immunotherapy other combination,immunotherapy combination,Salivary gland,SACA
+Acquired resistance,IRS-0002-A-001,Male,53,Never,2,Yes,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,SCC left tongue,HNSC
+Acquired resistance,IRS-0015-A-015,Male,67,10 p/y,2,Yes,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,SCC oral cavity,HNSC
+Acquired resistance,IRS-0039-A-039,Female,56,8 p/y,1,No,No,anti-PD1 monotherapy,immunotherapy single agent,Cutaneus melanoma,SKCM
+Acquired resistance,IRS-0045-A-045,Male,28,1 p/y,1,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,Cutaneus melanoma,SKCM
+Acquired resistance,IRS-0052-A-052,Female,49,NA,1,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,Cutaneus melanoma,SKCM
+Acquired resistance,IRS-0064-A-064,Female,76,Never,1,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,Acral melanoma,ACRM
+Acquired resistance,IRS-0065-A-065,Male,59,20 p/y,2,Yes,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,SCC maxillary sinus,HNSC
+Acquired resistance,IRS-0074-A-074,Male,84,Never,1,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,Cutaneus melanoma,SKCM
+Acquired resistance,IRS-0076-A-076,Male,79,NA,2,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,Acral melanoma,ACRM
+Acquired resistance,IRS-0085-A-085,Male,62,NA,3,Yes,No,anti-PD1 monotherapy,immunotherapy single agent,Nasopharyngeal cancer,NPC
+Primary resistance,IRS-0008-P-008,Male,75,30 p/y,1,No,No,anti-PD1 monotherapy,immunotherapy single agent,SCC Oropharynx,HNSC
+Primary resistance,IRS-0014-P-014,Male,55,Never,2,Yes,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,SCC lower left alveolus,HNSC
+Primary resistance,IRS-0029-P-029,Female,43,Never,1,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,Cutaneus melanoma,SKCM
+Primary resistance,IRS-0033-P-033,Male,73,20 p/y,1,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,SCC piriform sinus,HNSC
+Primary resistance,IRS-0034-P-034,Male,79,20 p/y,2,No,Yes,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,Cutaneus melanoma,SKCM
+Primary resistance,IRS-0036-P-036,Male,77,5 p/y,1,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,Acral lentiginous melanoma,ACRM
+Primary resistance,IRS-0038-P-038,Male,62,Never,1,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,SCC maxillary alveolus,HNSC
+Primary resistance,IRS-0040-P-040,Female,65,Never,1,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,Acral melanoma,ACRM
+Primary resistance,IRS-0054-P-054,Male,59,NA,1,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,Cutaneus melanoma,SKCM
+Primary resistance,IRS-0059-P-059,Female,40,Smoker,1,No,No,anti-PD1/PD-L1 monotherapy,immunotherapy single agent,Acral melanoma,ACRM
+Primary resistance,IRS-0070-P-070,Female,45,Never,2,Yes,No,anti-PD1 monotherapy,immunotherapy single agent,SCC tongue,HNSC
