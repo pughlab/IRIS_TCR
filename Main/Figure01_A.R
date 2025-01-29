@@ -65,11 +65,11 @@ PatientOrder <- (sample_inventory %>%
 ### Plot Vis; Horizontal Version ----------------------------------------------------------------------------------
 
 Technologies_Horizontal <- 
-ggplot(data = sample_inventory %>%
-                               mutate(Patient_id = fct_relevel(Patient_id , PatientOrder))%>%
-               mutate(
-                      Technology = fct_relevel(Technology ,
-                                               rev (c ("WGTA" ,  "IHC" , "Bulk CapTCR-seq" , "scRNA-seq" , "CITESeq")) ))) +
+        ggplot(data = sample_inventory %>%
+                       mutate(Patient_id = fct_relevel(Patient_id , PatientOrder))%>%
+                       mutate(
+                               Technology = fct_relevel(Technology ,
+                                                        rev (c ("WGTA" ,  "IHC" , "Bulk CapTCR-seq" , "scRNA-seq" , "CITESeq")) ))) +
         geom_tile(
                 aes(
                         y =  Technology,
@@ -79,7 +79,7 @@ ggplot(data = sample_inventory %>%
                 color = "#000000" ,
                 fill = "#000000" ,
                 linewidth = 0.05 ,
-                width = 0.85 , height = 0.85 )+
+                width = 0.9 , height = 0.9 )+
         
         scale_x_discrete() +
         facet_grid(`Sample type` ~ `Resistance`,
@@ -115,7 +115,8 @@ ggplot(data = sample_inventory %>%
 
 MetaData_Horizontal <- 
         ggplot(data = clinical_data %>%
-                           mutate(Patient_id = fct_relevel(Patient_id , PatientOrder)) ) +
+                       mutate(Patient_id = fct_relevel(Patient_id , PatientOrder)) %>%
+                       mutate(Trial = "IRIS")) +
         geom_tile(
                 aes(
                         y = "Gender" ,
@@ -129,7 +130,7 @@ MetaData_Horizontal <-
                           values = gender_ColPal$color) +
         
         #--------------------------------------------------------------------------
-        ggnewscale::new_scale_fill() +
+ggnewscale::new_scale_fill() +
         geom_tile(
                 aes(
                         y = "Treatment" ,
@@ -143,7 +144,7 @@ MetaData_Horizontal <-
                           values = treatment_ColPal$color) +
         
         #--------------------------------------------------------------------------
-        ggnewscale::new_scale_fill() +
+ggnewscale::new_scale_fill() +
         
         geom_tile(
                 aes(
@@ -160,7 +161,7 @@ MetaData_Horizontal <-
         
         scale_x_discrete(position = "top") +
         scale_y_discrete(limits = c("Gender" , "Cancer type", "Treatment")) +
-        facet_grid(. ~ `Resistance`,
+        facet_grid(Trial ~ `Resistance`,
                    scales = "free" ,
                    space = "free" ,
                    labeller = as_labeller(c(
@@ -169,6 +170,7 @@ MetaData_Horizontal <-
         theme_minimal() +
         theme(
                 panel.grid = element_blank() ,
+                panel.spacing.x = unit(1.5 , units = "line"),
                 panel.spacing.y = unit(0.5 , units = "line"),
                 axis.ticks = element_blank(),
                 axis.line = element_blank() ,
@@ -176,11 +178,11 @@ MetaData_Horizontal <-
                 
                 axis.title = element_blank() ,
                 
-                axis.text.y = element_text(size = 8 , color = "#000000" , vjust = 0) ,
+                axis.text.y = element_text(size = 8 , color = "#000000" , vjust = 0.5) ,
                 axis.text.x.top = element_text(size = 8 ,  color = "#000000" , angle = 90 , vjust = 0.5) ,
                 
-                strip.text.x = element_blank() ,
-                strip.text.y = element_blank() ,
+                strip.text.x.bottom = element_text(size = 8 , color = "#000000") ,
+                strip.text.y = element_text(size = 8 , color = "#000000" , angle = 0) ,
                 
                 legend.text = element_text(size = 8 , color = "#000000") ,
                 legend.title = element_text(size = 8 , color = "#000000") )
@@ -203,12 +205,13 @@ ggsave(
         dpi = 320)
 
 MetaData_Horizontal + Technologies_Horizontal + patchwork::plot_layout(design = Design ,
-                                                 guides='collect' ,
-                                                 heights = c(0.26 , 1.5)) &
+                                                                       guides='collect' ,
+                                                                       heights = c(0.26 , 1.5)) &
         theme(legend.position = "bottom" ,
               legend.direction = 'horizontal')
 
 dev.off ()
+
 
 ### Plot Vis; Vertical Version ------------------------------------------------------------------------------------
 
